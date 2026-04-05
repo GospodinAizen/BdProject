@@ -61,9 +61,7 @@ def login():
 
         error = 'Неправильно указан пользователь или пароль'
         return render_template('login.html', error=error)
-        
-    else:    
-        return render_template('registration.html')
+    return render_template('login.html', error=error)
 
 
 
